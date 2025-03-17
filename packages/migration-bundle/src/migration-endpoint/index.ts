@@ -186,7 +186,7 @@ export default defineEndpoint({
 						})
 						: isValid;
 
-					res.write(isValid ? `</div><h3 class="done">${Icon} Content Extracted</h3>\r\n\r\n` : `</div><h3 class="error">${Icon} System Data Extract Failed</h3>\r\n\r\n`);
+					res.write(isValid ? `</div><h3 class="done">${Icon} Content Extracted</h3>\r\n\r\n` : `</div><h3 class="error">${Icon} Content Extract Failed</h3>\r\n\r\n`);
 
 					// Step 2: Migration
 					res.write(isDryRun ? '## Checking Destination\r\n\r\n' : '## Starting Migration\r\n\r\n');
